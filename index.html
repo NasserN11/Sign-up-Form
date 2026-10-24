@@ -1,36 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
-    <link rel="icon" type="images/png" href="/images/TOP3DLogo.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="images/png" href="/images/TOP3DLogo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="background-section">
-        <div class="logo-section">
-            <img class="logo" src="/images/TOPLogo.png" alt="TOP logo">
-            <p class="logo-text">ODIN</p>
-        </div>
+      <div class="logo-section">
+        <img class="logo" src="/images/TOPLogo.png" alt="TOP logo" />
+        <p class="logo-text">ODIN</p>
+      </div>
     </div>
 
     <div class="main-section">
-        <div class="text-section">
-            <h1>This is <em>not</em> a real online service!</h1>
-            <p>You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-            <p>You know you want to.</p>
-        </div>
-        <div class="sign-up-form">
-            <form action="">
-                
-            </form>
-        </div>
-        <div class="sign-in-text"></div>
+      <div class="text-section">
+        <h1>This is <em>not</em> a real online service!</h1>
+        <p>
+          You know you need something like this in your life to help you realize
+          your deepest dreams. Sign up <em>now</em> to get started.
+        </p>
+        <p>You know you want to.</p>
+      </div>
+      <div class="sign-up-form">
+        <form action="">
+            
+            <div class="header-container">
+<svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#286765"><path d="M750-614q-27 27-62 41t-70 14q-35 0-69-13.5T488-614l-75-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T267-689l-75 75-57-57 75-75q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-746l75 75q16 16 35 23.5t39 7.5q20 0 39.5-7.5T693-671l75-75 57 57-75 75Zm0 200q-27 27-61.5 40.5T619-360q-35 0-69.5-13.5T488-414l-75-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T267-489l-75 75-57-56 75-76q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-546l75 75q16 16 35 23.5t39 7.5q20 0 39.5-7.5T693-471l75-75 57 57-75 75Zm-1 200q-27 27-61 40.5T619-160q-35 0-69.5-13.5T488-214l-76-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T266-289l-75 75-56-56 75-76q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-346l75 75q16 16 35.5 23.5T619-240q20 0 39-7.5t35-23.5l75-75 56 57-75 75Z"/></svg>                <h2>Let's do this!</h2>
 
+            </div>
+          <div class="form-row">
+            <p>
+              <label for="first-name">First Name </label>
+              <input type="text" id="first-name" name="first-name" required/>
+            </p>
+
+            <p>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </p>
+          </div>
+
+          <div class="form-row">
+            <p>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required/>
+            </p>
+
+            <p>
+              <label for="phone-number">Phone Number</label>
+              <input type="tel" id="phone-number" name="phone-number" placeholder="(555) 123-4567" min="6" max="20" required/>
+            </p>
+          </div>
+
+          <div class="form-row">
+            <p>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password"  placeholder="● ● ● ● ● ● ● ●" min="8" max="16" required/>
+            </p>
+
+            <p>
+              <label for="password-confirmation">Confirm Password</label>
+              <input
+                type="password"
+                id="password-confirmation"
+                name="password-confirmation"
+                placeholder="● ● ● ● ● ● ● ●"
+                min="8"
+                max="16"
+                required
+              />
+            </p>
+          </div>
+
+          <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#F3F3F3"><path d="M750-614q-27 27-62 41t-70 14q-35 0-69-13.5T488-614l-75-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T267-689l-75 75-57-57 75-75q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-746l75 75q16 16 35 23.5t39 7.5q20 0 39.5-7.5T693-671l75-75 57 57-75 75Zm0 200q-27 27-61.5 40.5T619-360q-35 0-69.5-13.5T488-414l-75-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T267-489l-75 75-57-56 75-76q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-546l75 75q16 16 35 23.5t39 7.5q20 0 39.5-7.5T693-471l75-75 57 57-75 75Zm-1 200q-27 27-61 40.5T619-160q-35 0-69.5-13.5T488-214l-76-75q-15-15-34-22.5t-39-7.5q-20 0-39 7.5T266-289l-75 75-56-56 75-76q27-27 61-40.5t69-13.5q35 0 68.5 13.5T469-346l75 75q16 16 35.5 23.5T619-240q20 0 39-7.5t35-23.5l75-75 56 57-75 75Z"/></svg>
+  
+              <span>Create Account</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#F3F3F3"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>
+          </button>
+        </form>
+      </div>
+      <div class="sign-in-text">Already have an account? <b>Log in</b> <span><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="-0 -960 960 460" width="20px" fill="#286765"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></span></div>
     </div>
-    
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
